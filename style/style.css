@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffcd8;
+    color: #1a1918; /* Negro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #2acbd3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, h2{
+    color: #f3808f;
+}
+
+
+.nav_a{
+    display: inline-block;
+    background-color: #f3808f;
+    color: white;
+    padding: 16px 55px;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+#logop{
+    width: 50px;
+    height: 60px;
+}
+
+.content1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 57vh;
+    height: 10vh;
+    width: 100vh;
+    padding: 10px;
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.info p{
+    color: black;
+    
+}
+
+.contact_p{
+    display: inline;
+    padding: 14vh;
+}
+.content3{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.div_standar{
+    margin: 50px 50px 50px 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.image_standar{
+    width: 250px;
+    height: 250px;
+}
+
+.content{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    margin: 0vh 0vh 10vh 58vh;
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content p{
+    margin: 50px 0px 0px 0px;
+    padding: 10px;
+}
+
+
+#banner{
+    width: 1000px;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    margin-top: 2vh;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#helado{
+    width: 306px;
+    height: 314px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+
+
+
+
+footer{
+    background-color: #2acbd3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#p_footer{
+    background-color: #f3808f;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content_contact{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
