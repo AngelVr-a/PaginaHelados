@@ -1,7 +1,14 @@
+/*INIT STANDARD*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 body {
@@ -10,6 +17,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
 }
 
 nav{
@@ -17,12 +28,9 @@ nav{
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
 }
-
-h1, h2{
-    color: #f3808f;
-}
-
 
 .nav_a{
     display: inline-block;
@@ -32,6 +40,33 @@ h1, h2{
     text-decoration: none;
     border: 3px solid white;
     border-radius: 15px;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+/*END STANDARD*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #f3808f;
+}
+
+
+h2{
+    color: #f3808f;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #logop{
@@ -39,34 +74,66 @@ h1, h2{
     height: 60px;
 }
 
+
 .content1{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    align-self: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    background-color: rgb(255, 253, 253); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 100px;
 }
 
+.content1 p{
+    color: #333;
+    font-size: 17px;
+}
+
+#helado{
+    width: 306px;
+    height: 314px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+
 .info{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 57vh;
+    align-self: center;
+    justify-content: space-around;
+    display: flex;
     height: 10vh;
-    width: 100vh;
+    width: 80vh;
     padding: 10px;
     background-color: white; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    margin-bottom: 15px;
 }
 
 .info p{
     color: black;
+    display: flex;
     
 }
 
 .contact_p{
-    display: inline;
-    padding: 14vh;
+    position: absolute;
+    left: 90px;
+    top: 50px;
 }
+
+.contact_p_2{
+    position: absolute;
+    right: 150px;
+    top: 50px
+}
+
+
 .content3{
     padding: 10px;
     display: flex;
@@ -83,21 +150,7 @@ h1, h2{
     height: 250px;
 }
 
-.content{
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    width: 100vh;
-    margin: 0vh 0vh 10vh 58vh;
-    background-color: white; 
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
-.content p{
-    margin: 50px 0px 0px 0px;
-    padding: 10px;
-}
 
 
 #banner{
@@ -109,22 +162,15 @@ h1, h2{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-#helado{
-    width: 306px;
-    height: 314px;
-    border: 3px solid white;
-    border-radius: 10px;
-}
-
-
-
-
 
 footer{
     background-color: #2acbd3;
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #p_footer{
@@ -139,6 +185,80 @@ footer{
     text-align: center;
     width: 100%;
     margin-bottom: 35px;
-    margin-top: 35px;
+    margin-top: 90px;
+    
 }
+
+
+
+.content-table{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 35px;
+}
+caption{
+    color: #f3808f;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+.table_group{
+    width: 200px;
+}
+
+table, tr, td, th{
+    
+    border: 3px solid #f3808f;
+    padding: 50px;
+}
+
+th{
+    background-color: #93e2f2;
+    text-transform: uppercase;
+    color: white;
+}
+
+tbody tr:nth-child( even ){
+    background-color: #f7deb2;
+}
+
+
+.content-card-benefit{
+    align-self: center;
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    width: 140vh;
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 100px;
+}
+
+
+.content-card-benefit li{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.content-card-benefit ol{
+    list-style: none;
+  
+}
+
+
+
+
+
 
