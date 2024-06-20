@@ -1,4 +1,4 @@
-/*INIT STANDARD*/
+/*standard styles*/
 *{
     margin: 0px;
     padding: 0px;
@@ -23,6 +23,77 @@ body {
     
 }
 
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #f3808f;
+}
+
+
+h2{
+    color: #f3808f;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    background-color: #2acbd3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 100px;
+}
+
+#p_footer{
+    background-color: #f3808f;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Standard containers for use in pages*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.content1{
+    margin-bottom: 20px;
+    align-self: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 253, 253); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.content1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.content1 p{
+    color: #333;
+    font-size: 17px;
+}
+/*Standard containers for use in pages*/
+
+/*Standard styles*/
+
+/*Styles Nav*/
 nav{
     background-color: #2acbd3;
     padding: 10px;
@@ -46,71 +117,41 @@ nav{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
-/*END STANDARD*/
-
-.content{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    margin-top: 90px;
-    margin-bottom: 10px;
-    width: 90%;
-}
-
-h1{
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5em;
-    color: #f3808f;
-}
-
-
-h2{
-    color: #f3808f;
-    padding: 10px;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 #logop{
     width: 50px;
     height: 60px;
 }
 
+/*Styles Nav*/
 
-.content1{
-    margin-bottom: 20px;
-    align-self: center;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(255, 253, 253); 
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    gap: 20px;
-    flex-direction: column;
-    width: 50%;
-    
-}
-
-.content1 img{
-    width: 100%;
-    object-fit: cover;
-}
+/*Styles page Index*/
 
 
-
-.content1 p{
-    color: #333;
-    font-size: 17px;
-}
 
 #helado{
- 
     border: 3px solid white;
     border-radius: 10px;
 }
 
+#banner{
+    object-fit: cover;
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    margin-top: 2vh;    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+/*Styles page Index*/
+
+/*Styles page About*/
+
+/*Styles page About*/
+
+/*Styles page Contact*/
 
 .info{
     align-self: center;
@@ -135,57 +176,6 @@ h2{
 }
 
 
-
-
-.content3{
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-.div_standar{
-    margin: 50px 50px 50px 50px;
-    width: 300px;
-    height: 300px;
-}
-
-.image_standar{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-
-
-
-#banner{
-    object-fit: cover;
-    width: 90%;
-    height: 350px;
-    border-radius: 10px;
-    margin-bottom: 70px;
-    margin-top: 2vh;    
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
-}
-
-
-footer{
-    background-color: #2acbd3;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    min-height: 100px;
-}
-
-#p_footer{
-    background-color: #f3808f;
-    color: white;
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 10px;
-}
-
 .content_contact{
     display: flex;
     text-align: center;
@@ -195,6 +185,10 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
+/*Styles page Contact*/
+
+/*Styles page Information*/
 
 .main-table{
     display: flex;
@@ -225,10 +219,7 @@ caption{
 .table{
     width: 100%;
     border-collapse: collapse;
-    
 }
-
-
 
 .table thead{
     background-color: #93e2f2;
@@ -241,7 +232,7 @@ caption{
     padding: 1.5rem;
     letter-spacing: 0.2rem;
     vertical-align: top;
-    border: 1px solid #f3808f;
+    border: 2px solid #f3808f;
 }
 
 .table tbody tr td{
@@ -249,18 +240,18 @@ caption{
     letter-spacing: 0.2rem;
     font-weight: normal;
     text-align: center;
-    border: 1px solid #f3808f;
+    border: 2px solid #f3808f;
     padding: 3rem;
 }
 
 .table tr:nth-child(even){
     background-color: #f7deb2;
     transition: all 0.3s ease-in;
-    
 }
 
+/*Styles page Information*/
 
-
+/*Styles page BenefitsTips*/
 
 .content-card-benefit{
     margin-bottom: 20px;
@@ -292,6 +283,10 @@ caption{
     list-style: none;
     width: 125%;
 }
+
+/*Styles page BenefitsTips*/
+
+/*Styles page Raffle*/
 
 .content_raffle{
     display: flex;
@@ -327,7 +322,13 @@ button{
 }
 
 
+/*Styles page Raffle*/
+
+/*Media query*/
     @media (max-width: 768px) {
+
+        /* Specific styles for smartphone screens */
+
         .table thead{
             display: none;
         }
@@ -360,12 +361,10 @@ button{
         }
     }
 
-
-
-
-  
    @media (min-width: 768px) and (max-width: 1200px) {
     
+     /* Specific styles for Tablet screens */
+
     .content1{
         flex-direction: row;
         width: 70%;
@@ -382,16 +381,14 @@ button{
 
     .content-card-benefit{
         flex-direction: row;
-        width: 70%;
+        width: 80%;
         height: 300px;
     }
-    
     
 }
 
 @media (min-width: 1200px) {
-    /* Estilos específicos para pantallas de notebooks y PCs */
-    /* Puedes agregar tus reglas de estilo aquí */
+    /* Specific styles for notebook and PC screens */
 
     nav{
         flex-direction: row;
@@ -422,6 +419,8 @@ button{
      }
 
 }
+
+/*Media query*/
 
 
 
