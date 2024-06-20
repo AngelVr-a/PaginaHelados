@@ -18,9 +18,9 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    padding-bottom: 100px;
     min-height: 100vh;
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 nav{
@@ -175,7 +175,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100%;
-   
+    min-height: 100px;
 }
 
 #p_footer{
@@ -196,48 +196,70 @@ footer{
     align-items: center;
 }
 
-
-
-.content-table{
+.main-table{
     display: flex;
-    flex-direction: column;
-    align-self: center;
+    justify-content: center;
     align-items: center;
-    margin-top: 90px;
-    margin-bottom: 35px;
 }
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+    margin-top: 50px;
+    margin-bottom: 50px ;
+}
+.container h1{
+    padding: 2rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 caption{
     color: #f3808f;
-    padding: 10px;
+    padding: 20px;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-table{
-    text-align: center;
+.table{
+    width: 100%;
     border-collapse: collapse;
     
 }
 
-.table_group{
-    width: 200px;
-}
 
-table, tr, td, th{
-    
-    border: 3px solid #f3808f;
-    padding: 50px;
-}
 
-th{
+.table thead{
     background-color: #93e2f2;
     text-transform: uppercase;
     color: white;
 }
 
-tbody tr:nth-child( even ){
-    background-color: #f7deb2;
+.table thead tr th {
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    letter-spacing: 0.2rem;
+    vertical-align: top;
+    border: 1px solid #f3808f;
 }
+
+.table tbody tr td{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #f3808f;
+    padding: 3rem;
+}
+
+.table tr:nth-child(even){
+    background-color: #f7deb2;
+    transition: all 0.3s ease-in;
+    
+}
+
+
 
 
 .content-card-benefit{
@@ -268,7 +290,7 @@ tbody tr:nth-child( even ){
 
 .content-card-benefit ol{
     list-style: none;
-  
+    width: 125%;
 }
 
 .content_raffle{
@@ -305,9 +327,44 @@ button{
 }
 
 
+    @media (max-width: 768px) {
+        .table thead{
+            display: none;
+        }
+
+        .table tr, .table td{
+            display: block;
+            width: 100%;
+        }
+
+        .table tr{
+            margin-bottom: 1rem;
+        }
+
+        .table tbody tr td{
+            text-align: right;
+            position: relative;
+        }
+
+        .table td::before{
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            text-align: left;
+            padding: 1.2rem;
+        }
+
+        .content-card-benefit ol{
+            width: 80%;
+        }
+    }
+
+
+
 
   
-   @media (min-width: 768px) and (max-width: 1024px) {
+   @media (min-width: 768px) and (max-width: 1200px) {
     
     .content1{
         flex-direction: row;
@@ -332,7 +389,7 @@ button{
     
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     /* Estilos específicos para pantallas de notebooks y PCs */
     /* Puedes agregar tus reglas de estilo aquí */
 
